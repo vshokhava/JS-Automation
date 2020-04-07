@@ -1,5 +1,4 @@
 class plane {
-
     constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity) {
         this.model = model;
         this.maxSpeed = maxSpeed;

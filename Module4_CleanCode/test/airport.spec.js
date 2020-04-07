@@ -51,7 +51,6 @@ describe('Get military plane with transport type', () => {
         assert.isFalse(expectedPlaneWithMaxPassengersCapacity == planeWithMaxPassengerCapacity);
     });
 
-
     it('sort planes by max load capacity', () => {
         let airport = new Airport(planes);
         airport.sortByMaxLoadCapacity();
@@ -91,14 +90,8 @@ describe('Get military plane with transport type', () => {
         for (let experimentalPlane  of bomberMilitaryPlanes) {
             if (experimentalPlane.classificationLevel === classificationLevel.unclassified) {
                 hasUnclassifiedPlanes = true;
-
         }
         assert.isFalse(hasUnclassifiedPlanes);
-
         }
     });
-
 });
-
-
-

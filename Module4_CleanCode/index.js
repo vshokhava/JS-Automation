@@ -7,7 +7,7 @@ const experimentalPlane = require('./planes/experimentalPlane');
 const experimentalTypes = require('./models/experimentalType');
 const classificationLevel = require('./models/classificationLevel');
 
-(function run() {
+function run() {
 
     let planes = [
         new passengerPlane('Boeing-737', 900, 12000, 60500, 164),
@@ -34,4 +34,4 @@ const classificationLevel = require('./models/classificationLevel');
     console.log(`Military airport sorted by max distance: ${Airport.print(militaryAirport.sortByMaxDistance())}`);
     console.log(`Passenger airport sorted by max speed: ${Airport.print(passengerAirport.sortByMaxSpeed())}`);
     console.log(`Plane with max passenger capacity: ${Airport.print(passengerAirport.getPassengerPlaneWithMaxPassengersCapacity())}`);
-})();
+};
