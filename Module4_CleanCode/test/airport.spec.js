@@ -76,7 +76,7 @@ describe('Get military plane with transport type', () => {
             if (militaryPlane.getMilitaryType() === militaryType.bomber) {
                 flag = true;
             }
-            else{
+            else {
                 assert.fail("Test failed!");
             }
         }
