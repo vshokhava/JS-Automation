@@ -1,0 +1,33 @@
+{
+  "name": "module5_unittestingframeworks",
+  "version": "1.0.0",
+  "description": "a simple calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm run test"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.0.0",
+    "nyc": "^15.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "nyc": {
+    "reporter": "html",
+    "check-coverage": true,
+    "brances": 100,
+    "lines": 100,
+    "functions": 100
+  }
+}

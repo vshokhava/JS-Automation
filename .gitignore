@@ -3,4 +3,8 @@
 *.gif
 target/
 bin/
+node_modules
+!mocha
+!chai
 Module4_CleanCode/node_modules/
+Module5_CleanCode/node_modules/
