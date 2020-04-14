@@ -1,10 +1,30 @@
-const add = (x, y) => +x + +y;
-const multiply = (x, y) => +x * +y
-const validateNumbers = (x, y) => {
-    if (isNaN(x) || isNaN(y)) {
-      return false
-    }
-    return true
+class Calculator {
+  constructor() {
   }
 
-module.exports = {add, multiply, validateNumbers}
+  add(...args) {
+    let result = 0;
+    for (const arg of args) {
+      if (isNaN(arg)) {
+        return 'argument is not a number';
+      } else {
+        result += arg;
+      }
+    }
+    return result;
+  }
+
+  multiply(...args) {
+    let result = 1;
+    for (const arg of args) {
+      if (isNaN(arg)) {
+        return 'argument is not a number';
+      } else {
+        result *= arg;
+      }
+    }
+    return result;
+  }
+}
+
+module.exports = Calculator;
