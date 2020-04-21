@@ -8,3 +8,5 @@ node_modules
 !chai
 Module4_CleanCode/node_modules/
 Module5_CleanCode/node_modules/
+Module6_Webdriver/node_modules/
+Module6_Protractor/node_modules/
