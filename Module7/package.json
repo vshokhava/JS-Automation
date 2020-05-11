@@ -1,0 +1,17 @@
+{
+  "name": "module71",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor ./config.js",
+    "postinstall": "webdriver-manager update --gecko=false"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "protractor": "^5.4.4"
+  }
+}
