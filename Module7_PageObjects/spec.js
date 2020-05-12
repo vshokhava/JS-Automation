@@ -16,10 +16,10 @@ describe ("TESTS", function () {
       await HomePage.Header.searchInputField.element.sendKeys("testing");
       await HomePage.Header.searchInputSubmit.click();
       await browser.wait(EC.visibilityOf(SearchPage.searchLinks.collection.get(0)), 5000);
-      await browser.wait(EC.visibilityOf(ReadPage.docTitles.collection), 5000);
+      browser.wait(EC.visibilityOf(ReadPage.docTitles.collection), 5000);
       expect (ReadPage.getPageTitle()).to.eventually.equal('NelsonHall’s Strategy Update on Our Crowdtesting Business | EPAM');
     });
-    it("get results by filling in from for finding a jo", async function () {
+    it("get results by filling in from for finding a job", async function () {
       await HomePage.open();
       await HomePage.Header.headerLinks.clickElementByText('CAREERS');
       browser.wait(EC.elementToBeClickable(CareersPage.keywordField.element), 5000);
