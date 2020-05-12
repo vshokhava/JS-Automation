@@ -5,8 +5,7 @@ const Collection = require('./baseCollection.js');
 class SearchPage extends BasePage {
     constructor() {
         super();
-        this.searchLink = new Element('.search-results__title-link');
-        this.linkToClick = element(by.partialLinkText('test IO:'));
+        this.searchLinks = new Collection('.search-results__title-link');
     };
   open() {
         return super.open('https://www.epam.com/search');

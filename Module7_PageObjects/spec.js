@@ -15,9 +15,8 @@ describe ("TESTS", function () {
       await HomePage.Header.searchInputField.click(); 
       await HomePage.Header.searchInputField.element.sendKeys("testing");
       await HomePage.Header.searchInputSubmit.click();
-      browser.wait(EC.visibilityOf(SearchPage.searchLink.element), 5000);
-      await SearchPage.linkToClick.click();
-      browser.wait(EC.visibilityOf(ReadPage.docTitles.collection), 5000);
+      await browser.wait(EC.visibilityOf(SearchPage.searchLinks.collection.get(0)), 5000);
+      await browser.wait(EC.visibilityOf(ReadPage.docTitles.collection), 5000);
       expect (ReadPage.getPageTitle()).to.eventually.equal('NelsonHall’s Strategy Update on Our Crowdtesting Business | EPAM');
     });
     it("get results by filling in from for finding a jo", async function () {
