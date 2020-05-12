@@ -13,9 +13,15 @@ exports.config = {
       baseUrl: 'localhost',
       mochaOpts: {
         reporter:'spec',
-        timeout: 30000
+        timeout: 700000
       },
       onPrepare: () => {
         return browser.waitForAngularEnabled(false);
-      }
-    };
+      },
+      onPrepare: function() {
+        var chai = require('chai'),
+            chaiAsPromised = require('chai-as-promised');
+        chai.use(chaiAsPromised);
+        global.expect = chai.expect;
+    }
+    }

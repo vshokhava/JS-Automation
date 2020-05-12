@@ -8,5 +8,8 @@ class Element {
     getText() {
         return this.element.getText();
     };
+    sendKeys() {
+        return this.element.sendKeys();
+    };
 };
 module.exports =  Element;
