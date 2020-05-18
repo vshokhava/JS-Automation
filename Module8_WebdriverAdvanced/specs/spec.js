@@ -76,4 +76,7 @@ describe ("TESTS with actions, Javascript Executor", function () {
         browser.executeScript("arguments[0].style.backgroundColor = 'red'", ReadPage.Footer.footerFrame.element);
         expect(HomePage.Footer.footerFrame.element.isDisplayed()).to.be.eventually.true;
       });
+      this.afterAll(function() {
+        return browser.close();
+         });
 });
