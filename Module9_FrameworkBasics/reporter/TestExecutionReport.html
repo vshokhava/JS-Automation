@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">Sample Reports</h1>
+          <h3 class="report-date">Thursday, May 21 2020, 06:11pm</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">32.663<span>S</span></li>
+                <li class="qs-item summary-suites" title="Suites">1</li>
+                <li class="qs-item summary-tests" title="Tests">4</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">4</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">32.663<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Suite</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="e80ff710-edab-4241-bc27-5f1394bf0ee0" class="suite has-tests has-passed">
+            <h3 class="suite-title">TESTS with actions, Javascript Executor</h3>
+            <h5 class="suite-filename">\specs\spec.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="e80ff710-edab-4241-bc27-5f1394bf0ee0" class="suite-chart" width="50" height="50" data-total-passes="4" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">32.632 s</li>
+                <li class="suite-summary-item tests">4</li>
+                <li class="suite-summary-item passed">4</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#e80ff710-edab-4241-bc27-5f1394bf0ee0-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="e80ff710-edab-4241-bc27-5f1394bf0ee0-test-list" class="list-group test-list collapse in">
+                    <div id="81a01a36-8c98-4074-9be1-692befa4288a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              get search results after click on link in SRL
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#81a01a36-8c98-4074-9be1-692befa4288a > .test-logr.collapse">Log </button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#81a01a36-8c98-4074-9be1-692befa4288a > .test-code.collapse">Code </button>
+              <span class="test-duration slow">16.675 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+        
+            <p class="test-screenshot"><button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#81a01a36-8c98-4074-9be1-692befa4288a > .test-scr.collapse">Screenshot </button>
+            </p>
+        <br>  <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>      <span class="hljs-keyword">await</span> HomePage.open();<br>      browser.actions().click(HomePage.Header.magnifierIcon.element).perform();<br>      <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.searchInputField.element), <span class="hljs-number">7000</span>);<br>      <span class="hljs-keyword">await</span> browser.actions().click(HomePage.Header.searchInputField.element).perform(); <br>      <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.searchInputField.element), <span class="hljs-number">7000</span>);<br>      <span class="hljs-keyword">await</span> browser.actions().sendKeys(<span class="hljs-string">"testing"</span>).perform();<br>      browser.actions().sendKeys(protractor.Key.ENTER).perform();<br>      <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>)), <span class="hljs-number">7000</span>);<br>      <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>)), <span class="hljs-number">7000</span>);<br>      <span class="hljs-keyword">await</span> SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>).click();<br>      <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(ReadPage.titleBox.element), <span class="hljs-number">7000</span>);<br>      <span class="hljs-keyword">await</span> browser.sleep(<span class="hljs-number">5000</span>);<br>      expect(ReadPage.floatingMenu).to.exist;</code></pre>
+          </div>
+          <div class="test-scr collapse">
+            <pre><code class="hljs small"><img src="./screenshots/1590073842611_tests_with_actions_javascript_executor_get_search_results_after_click_on_link_in_srl.png"></code></pre>
+          </div>
+        </div>            <div id="f5be2eb1-7b2f-4303-a6e0-6ff2a7d0ae69" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              get results by filling in from for finding a job
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f5be2eb1-7b2f-4303-a6e0-6ff2a7d0ae69 > .test-logr.collapse">Log </button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f5be2eb1-7b2f-4303-a6e0-6ff2a7d0ae69 > .test-code.collapse">Code </button>
+              <span class="test-duration slow">9.607 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+        
+            <p class="test-screenshot"><button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#f5be2eb1-7b2f-4303-a6e0-6ff2a7d0ae69 > .test-scr.collapse">Screenshot </button>
+            </p>
+        <br>  <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>        <span class="hljs-keyword">await</span> HomePage.open();<br>        <span class="hljs-keyword">await</span> HomePage.Header.headerLinks.clickElementByText(<span class="hljs-string">'CAREERS'</span>);<br>        <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(CareersPage.keywordField.element), <span class="hljs-number">10000</span>);<br>        browser.actions().click(CareersPage.keywordField.element).perform();<br>        browser.actions().sendKeys(<span class="hljs-string">"testing"</span>).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(CareersPage.locationField.element), <span class="hljs-number">10000</span>);<br>        browser.actions().click(CareersPage.keywordField.element).perform();<br>        browser.actions().click(CareersPage.locationField.element).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(CareersPage.locationDropdown.element), <span class="hljs-number">10000</span>);<br>        browser.actions().click(CareersPage.locationDropdown.element).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(CareersPage.careersSearchSubmit.element), <span class="hljs-number">10000</span>);<br>        browser.actions().click(CareersPage.careersSearchSubmit.element).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(CareersResultsPage.searchResultsList.collection.get(<span class="hljs-number">0</span>)), <span class="hljs-number">10000</span>);<br>        expect (CareersResultsPage.getPageTitle()).to.eventually.equal(<span class="hljs-string">'Job Listings'</span>);</code></pre>
+          </div>
+          <div class="test-scr collapse">
+            <pre><code class="hljs small"><img src="./screenshots/1590073859293_tests_with_actions_javascript_executor_get_results_by_filling_in_from_for_finding_a_job.png"></code></pre>
+          </div>
+        </div>            <div id="ef53891e-2c48-401e-ae90-7987b6d7a6b2" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              scroll to see Footer
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ef53891e-2c48-401e-ae90-7987b6d7a6b2 > .test-logr.collapse">Log </button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ef53891e-2c48-401e-ae90-7987b6d7a6b2 > .test-code.collapse">Code </button>
+              <span class="test-duration slow">2.353 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+        
+            <p class="test-screenshot"><button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#ef53891e-2c48-401e-ae90-7987b6d7a6b2 > .test-scr.collapse">Screenshot </button>
+            </p>
+        <br>  <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>        <span class="hljs-keyword">await</span> HomePage.open();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.magnifierIcon.element), <span class="hljs-number">7000</span>);<br>        browser.executeScript(<span class="hljs-string">"window.scrollTo(0, document.body.scrollHeight)"</span>);<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Footer.footerFrame.element), <span class="hljs-number">7000</span>);<br>        expect(<span class="hljs-keyword">await</span> HomePage.Footer.footerFrame.element.isDisplayed()).to.be.true;</code></pre>
+          </div>
+          <div class="test-scr collapse">
+            <pre><code class="hljs small"><img src="./screenshots/1590073868910_tests_with_actions_javascript_executor_scroll_to_see_footer.png"></code></pre>
+          </div>
+        </div>            <div id="ff87ee9a-d4f1-46b8-95eb-81657f3f1c8d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              highlight elements and scroll search page
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ff87ee9a-d4f1-46b8-95eb-81657f3f1c8d > .test-logr.collapse">Log </button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ff87ee9a-d4f1-46b8-95eb-81657f3f1c8d > .test-code.collapse">Code </button>
+              <span class="test-duration slow">3.997 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+        
+            <p class="test-screenshot"><button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#ff87ee9a-d4f1-46b8-95eb-81657f3f1c8d > .test-scr.collapse">Screenshot </button>
+            </p>
+        <br>  <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<br>        <span class="hljs-keyword">await</span> HomePage.open();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.magnifierIcon.element), <span class="hljs-number">7000</span>);<br>        browser.executeScript(<span class="hljs-string">"arguments[0].style.backgroundColor = 'red'"</span>, HomePage.Header.magnifierIcon.element);<br>        browser.actions().click(HomePage.Header.magnifierIcon.element).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.searchInputField.element), <span class="hljs-number">7000</span>);<br>        browser.executeScript(<span class="hljs-string">"arguments[0].style.backgroundColor = 'red'"</span>, HomePage.Header.searchInputField.element);<br>        browser.actions().click(HomePage.Header.searchInputField.element).perform(); <br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(HomePage.Header.searchInputField.element), <span class="hljs-number">7000</span>);<br>        browser.actions().sendKeys(<span class="hljs-string">"testing"</span>).perform();<br>        browser.actions().sendKeys(protractor.Key.ENTER).perform();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>)), <span class="hljs-number">7000</span>);<br>        <span class="hljs-keyword">await</span> browser.wait(EC.elementToBeClickable(SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>)), <span class="hljs-number">7000</span>);<br>        SearchPage.searchLinks.collection.get(<span class="hljs-number">0</span>).click();<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(ReadPage.titleBox.element), <span class="hljs-number">7000</span>);<br>        browser.executeScript(<span class="hljs-string">"arguments[0].style.backgroundColor = 'red'"</span>, ReadPage.titleBox.element);<br>        browser.executeScript(<span class="hljs-string">"window.scrollTo(0, document.body.scrollHeight)"</span>);<br>        <span class="hljs-keyword">await</span> browser.wait(EC.visibilityOf(ReadPage.Footer.footerFrame.element), <span class="hljs-number">7000</span>);<br>        browser.executeScript(<span class="hljs-string">"arguments[0].style.backgroundColor = 'red'"</span>, ReadPage.Footer.footerFrame.element);<br>        expect(HomePage.Footer.footerFrame.element.isDisplayed()).to.be.eventually.true;</code></pre>
+          </div>
+          <div class="test-scr collapse">
+            <pre><code class="hljs small"><img src="./screenshots/1590073871265_tests_with_actions_javascript_executor_highlight_elements_and_scroll_search_page.png"></code></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2020.</p>
+      </div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#e80ff710-edab-4241-bc27-5f1394bf0ee0" class="nav-menu-item-link has-passes">TESTS with actions, Javascript Executor</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
