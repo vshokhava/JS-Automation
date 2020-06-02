@@ -1,0 +1,442 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Scrolling",
+    "line": 2,
+    "id": "scrolling",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "test\\features\\scroll_page.feature",
+    "elements": [
+      {
+        "id": "scrolling;scroll-to-see-footer",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Scroll to see Footer",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@scroll",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open \"https://www.epam.com/\" url",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I wait until page element is visible",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I scroll to the bottom of the page",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see Footer",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Search",
+    "line": 2,
+    "id": "search",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "test\\features\\search.feature",
+    "elements": [
+      {
+        "id": "search;search-from-home-page",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Search from Home page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@so",
+            "line": 3
+          },
+          {
+            "name": "@search",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"https://www.epam.com/\" url",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 883000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click Magnifier Glass Icon",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3002000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I type \"testing\" in Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click Search button",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be on Search page",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Page title should be \"Search\"",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search;search-from-home-page",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Search from Home page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@so",
+            "line": 3
+          },
+          {
+            "name": "@search",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"https://www.epam.com/\" url",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 880000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click Magnifier Glass Icon",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I type \"QA\" in Search Input field",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click Search button",
+            "match": {
+              "location": "test\\step_definitions\\action.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be on Search page",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 829000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Page title should be \"Search\"",
+            "match": {
+              "location": "test\\step_definitions\\validation.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
