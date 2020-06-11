@@ -12,8 +12,6 @@
     "axios": "^0.19.2",
     "chai": "^4.2.0",
     "mocha": "^7.2.0",
-    "mochawesome": "^6.1.1",
-    "request": "^2.88.2",
-    "request-promise-native": "^1.0.8"
+    "mochawesome": "^6.1.1"
   }
 }
