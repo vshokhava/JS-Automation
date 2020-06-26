@@ -1,0 +1,29 @@
+{
+  "name": "module14_reporting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node ./test/utils/delete_reports.js",
+    "test": "protractor ./test/config/protractor_config.js",
+    "postinstall": "webdriver-manager update"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "cucumber-junit-convert": "^1.1.0",
+    "cucumber-pretty": "^6.0.0",
+    "fs-extra": "^9.0.1",
+    "log4js": "^6.3.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "winston": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "protractor": "^7.0.0",
+    "yargs": "^15.3.1"
+  }
+}
