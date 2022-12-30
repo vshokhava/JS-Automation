@@ -16,7 +16,7 @@
     "chai-as-promised": "^7.1.1",
     "chai-in-viewport": "^1.0.3",
     "fs-extra": "^9.0.0",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "mochawesome-screenshots": "^1.6.0",
     "path": "^0.12.7",
     "protractor": "^7.0.0",
